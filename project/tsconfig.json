@@ -1,0 +1,21 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+
+  "compilerOptions": {
+    "jsx": "react-jsx",     // or "react" if using React 17
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "skipLibCheck": true    // 👈 important to ignore minor type conflicts
+  }
+}
