@@ -1,6 +1,6 @@
 {
   "scripts": {
     "start": "cd my-node-app && npm start",
-    "build": "cd project && npm install && npm run build && cd . && cd my-node-app && npm install && npm run build"
+    "build": "cd project && npm install && npm run build &&  cd ../my-node-app && npm install && npm run build"
   }
 }
