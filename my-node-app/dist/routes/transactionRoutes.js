@@ -1,0 +1,23 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = __importDefault(require("express"));
+const transaction_controller_1 = require("../controllers/transaction.controller");
+const router = express_1.default.Router();
+router.post('/add', transaction_controller_1.addTransaction);
+router.get('/getAll', transaction_controller_1.getTransactions);
+router.get('/totalExpense', transaction_controller_1.getTotalExpense);
+router.get('/totalRevenue', transaction_controller_1.getTotalRevenue);
+router.get("/balance", transaction_controller_1.getBalance);
+// router.get('/pendingExpense',getPendingExpense);
+// router.get('/pendingRevenue',getPendingRevenue);
+router.get('/filteredTransactions', transaction_controller_1.getFilteredTransactions);
+router.get("/lineChart", transaction_controller_1.getLineChart);
+router.get("/analytics", transaction_controller_1.getAnalytics);
+router.get('/recent', transaction_controller_1.getRecentTransactions);
+router.post("/add", transaction_controller_1.addTransaction);
+router.put("/update/:id", transaction_controller_1.updateTransaction);
+router.delete("/delete/:id", transaction_controller_1.deleteTransaction);
+exports.default = router;
