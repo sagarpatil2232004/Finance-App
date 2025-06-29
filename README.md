@@ -1,7 +1,5 @@
 
-
 # 💸 FINANCE-APP
-
 > _Empowering Smarter Financial Decisions Every Day_
 
 [![Last Commit](https://img.shields.io/github/last-commit/sagarpatil2232004/Finance-App?style=flat&logo=git&logoColor=white&color=0080ff)](https://github.com/sagarpatil2232004/Finance-App)
@@ -26,6 +24,32 @@
 
 ---
 
+---
+
+## 🌐 Live Application
+
+🔗 [https://finance-app-buib.onrender.com](https://finance-app-buib.onrender.com)
+
+---
+
+## 📬 Postman Collection
+
+Explore and test API endpoints with Postman:
+
+🔗 [https://documenter.getpostman.com/view/33092847/2sB2xFg8af](https://documenter.getpostman.com/view/33092847/2sB2xFg8af)
+
+---
+
+## ✨ Features
+
+- 🔐 JWT-based Authentication (Login/Register)
+- 💰 Add, Edit, Delete Transactions
+- 📊 Filter & Analyze Spending by Category, Status, Date
+- 📈 Responsive UI with Recharts Analytics
+- 🌐 RESTful API with Express and MongoDB
+
+---
+
 ## 📦 Getting Started
 
 These instructions will get your copy of the project up and running on your local machine.
@@ -44,3 +68,45 @@ These instructions will get your copy of the project up and running on your loca
 
 ```bash
 git clone https://github.com/sagarpatil2232004/Finance-App
+```
+
+### Step 2: Navigate to the Project Directory
+
+```bash
+cd Finance-App
+```
+
+### Step 3: Install the Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## ⚙️ Usage
+
+### Step 4: Set Up Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+```
+
+Make sure MongoDB is running and accessible.
+
+---
+
+### Step 5: Run the App
+
+Start the backend:
+
+```bash
+npm start
+```
+
+---
+
+Made with ❤️ by **Sagar Patil**
